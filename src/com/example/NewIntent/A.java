@@ -51,6 +51,12 @@ public class A extends Activity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         /* we want future calls to getIntent have this new intent. e.g. new search not the one at creation */
+
+        // desired behaviour
+//        finish();
+//        startActivity(intent);
+
+        // undesired behaviour
         setIntent(intent);
         handleIntent(intent);
     }
