@@ -35,3 +35,8 @@ The undesired behaviour, as shown with #setIntent, is:
         handleIntent(intent);
     }
 ```
+
+You will note that the Android documentation even states under [setIntent] [1]
+"Often used in conjunction with onNewIntent(Intent)."
+
+[1]: https://developer.android.com/reference/android/app/Activity.html#setIntent(android.content.Intent)
